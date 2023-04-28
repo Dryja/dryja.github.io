@@ -1,0 +1,71 @@
+baseURL: http://dryja.github.io/
+languageCode: en-us
+title: "Hubert Dryja"
+theme: "PaperMod"
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Linkedin
+                  url: https://www.linkedin.com/in/hubert-dryja/
+                - name: Github
+                  url: https://github.com/Dryja
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Doing things that work. Whether it's implementing new features, optimizing existing systems, or just 🧹🧹"
+    author: Hubert Dryja
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: false
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: false
+        title: PaperMod
+        imageUrl: "#"
+        imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    homeInfoParams:
+        Title: "Hey, I'm Hubert 👋"
+        Content: >
+            Doing things that work. Whether it's implementing new features, optimizing existing systems, or just 🧹🧹
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Dryja"
+        - name: Rss
+          url: "index.xml"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
